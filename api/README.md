@@ -71,6 +71,10 @@ black .
 
 ### Testing
 
+```bash
+pytest --cov=app --cov-report=term-missing
+```
+
 ### Pruebas con solicitudes reales
 
 Se genera una carpeta http que contiene todas las solicitudes permitidas en el sistema.
