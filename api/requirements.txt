@@ -1,5 +1,8 @@
+aiosqlite==0.21.0
 annotated-types==0.7.0
 anyio==4.9.0
+argon2-cffi==25.1.0
+argon2-cffi-bindings==21.2.0
 astroid==3.3.10
 asyncpg==0.30.0
 bcrypt==4.3.0
@@ -7,6 +10,7 @@ black==25.1.0
 certifi==2025.4.26
 cffi==1.17.1
 click==8.2.1
+coverage==7.9.0
 cryptography==45.0.4
 dill==0.4.0
 dnspython==2.7.0
@@ -42,6 +46,7 @@ Pygments==2.19.1
 pylint==3.3.7
 pytest==8.4.0
 pytest-asyncio==1.0.0
+pytest-cov==6.2.1
 python-dotenv==1.1.0
 python-jose==3.5.0
 rsa==4.9.1
