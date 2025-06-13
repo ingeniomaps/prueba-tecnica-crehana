@@ -1,0 +1,9 @@
+@URI=http://localhost:8080
+
+POST {{URI}}/auth/register
+Content-Type: application/json
+
+{
+  "email": "example@test.co",
+  "password": "test12345"
+}

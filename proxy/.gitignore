@@ -1,0 +1,50 @@
+# Distribution / packaging
+.vscode/
+node_modules/
+bower_components/
+.DS_Store
+*/.DS_Store
+build/
+global_settings/local.*
+global_settings/prod.*
+.tmp
+tmp*
+*.pyc
+test.db
+uploads/
+static/
+dist/
+data/
+.python-version
+
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+
+# C extensions
+*.so
+
+# Django stuff:
+*.log
+*.pot
+*.test.*
+
+# Installer logs
+pip-log.txt
+pip-delete-this-directory.txt
+
+# PyInstaller
+#  Usually these files are written by a python script from a template
+#  before PyInstaller builds the exe, so as to inject date/other infos into it.
+*.manifest
+*.spec
+
+# Local
+#  Ignore files despised for user
+Pipfile*
+postgres_data/
+*Testing.py
+*_testing*
+
+.env
+.env.*

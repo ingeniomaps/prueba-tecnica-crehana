@@ -1,0 +1,28 @@
+@URI=http://localhost:8080
+@ACCESS_TOKEN=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJleGFtcGxlQHRlc3QuY28iLCJleHAiOjE3NDk3Nzc2MDh9.wcbD1eNJr3duEGXPYX-79PNlMjQCr7V5m-Z6JyDDmYA
+
+
+POST {{URI}}/auth/register
+Content-Type: application/json
+
+{
+  "email": "example@test.co",
+  "password": "test12345"
+}
+
+
+POST http://localhost:8080/auth/login
+Content-Type: application/json
+
+{
+  "email": "example@test.co",
+  "password": "test12345"
+}
+
+
+GET http://localhost:8080/auth/me
+Authorization: Bearer {{ACCESS_TOKEN}}
+
+
+POST http://localhost:8080/auth/logout
+Authorization: Bearer {{ACCESS_TOKEN}}

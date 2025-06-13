@@ -1,0 +1,4 @@
+@ACCESS_TOKEN=
+
+GET http://localhost:8080/task?task_list_id=&status=&priority=
+Authorization: Bearer {{ACCESS_TOKEN}}

@@ -1,0 +1,25 @@
+[flake8]
+
+max-line-length = 100
+max-complexity = 10
+extend-ignore = E203, W503
+
+exclude =
+    .git,
+    __pycache__,
+    build,
+    dist,
+    .venv,
+    venv,
+    .mypy_cache,
+    .pytest_cache
+    postgres_data/
+    env/
+
+show-source = True
+statistics = True
+
+import-order-style = google
+application-import-names = app
+
+docstring-convention = google

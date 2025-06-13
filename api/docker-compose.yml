@@ -1,0 +1,26 @@
+services:
+  api:
+    container_name: $CONTAINER_NAME
+    working_dir: /code
+    restart: always
+    build: .
+    image: $CONTAINER_NAME
+    expose:
+      - 80
+    volumes:
+      - $VOLUME_INIT
+    command:
+      - /bin/sh
+      - '-c'
+      - './scripts/entrypoint.sh'
+    networks:
+      custom_network:
+        ipv4_address: $CONTAINER_IP
+
+networks:
+  custom_network:
+    name: $NETWORK
+    external: true
+
+volumes:
+  .:

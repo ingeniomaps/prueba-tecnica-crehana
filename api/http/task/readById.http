@@ -1,0 +1,5 @@
+@ACCESS_TOKEN=
+@ID=
+
+GET http://localhost:8080/task/{{ID}}
+Authorization: Bearer {{ACCESS_TOKEN}}

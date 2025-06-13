@@ -1,0 +1,14 @@
+services:
+  database:
+    container_name: crehana-postgres
+    restart: unless-stopped
+    image: postgres:17.5
+    env_file: .env
+    networks:
+      custom_network:
+        ipv4_address: $POSTGRES_HOST
+
+networks:
+  custom_network:
+    name: $NETWORK
+    external: true

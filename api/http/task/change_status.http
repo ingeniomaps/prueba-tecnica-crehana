@@ -1,0 +1,10 @@
+@ACCESS_TOKEN=
+@ID=
+
+PATCH http://localhost:8080/task/{{ID}}
+Authorization: Bearer {{ACCESS_TOKEN}}
+Content-Type: application/json
+
+{
+  "status": "Nuevo titilo"
+}

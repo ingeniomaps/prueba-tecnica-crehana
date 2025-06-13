@@ -1,0 +1,52 @@
+@ACCESS_TOKEN=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJleGFtcGxlQHRlc3QuY28iLCJleHAiOjE3NDk3Nzc2MDh9.wcbD1eNJr3duEGXPYX-79PNlMjQCr7V5m-Z6JyDDmYA
+@ID=a0432a98-2730-4674-81b8-3945a8ee3d75
+@LIST=d87841f7-520a-441e-a39d-c06b1e541fc2
+
+POST http://localhost:8080/task
+Content-Type: application/json
+Authorization: Bearer {{ACCESS_TOKEN}}
+
+{
+  "title": "Tarea 1",
+  "description": "Tarea de muestra",
+  "status": "pending",
+  "priority": "low",
+  "due_date": "2025-10-01",
+  "created_by_id": "448ea29f-1fd4-4370-b7eb-8519fc1e7316",
+  "task_list_id": "d87841f7-520a-441e-a39d-c06b1e541fc2",
+  "extra_metadata": {
+    "complexity": "20"
+  }
+}
+
+
+GET http://localhost:8080/task
+Authorization: Bearer {{ACCESS_TOKEN}}
+
+
+GET http://localhost:8080/task/{{ID}}
+Authorization: Bearer {{ACCESS_TOKEN}}
+
+
+PATCH http://localhost:8080/task/{{ID}}
+Authorization: Bearer {{ACCESS_TOKEN}}
+Content-Type: application/json
+
+{
+  "title": "Titulo actualizado",
+  "status": "active"
+}
+
+DELETE http://localhost:8080/task/{{ID}}
+Authorization: Bearer {{ACCESS_TOKEN}}
+
+GET http://localhost:8080/task?list_id={{LIST}}&status=active&priority=low
+Authorization: Bearer {{ACCESS_TOKEN}}
+
+PATCH http://localhost:8080/task/{{ID}}
+Authorization: Bearer {{ACCESS_TOKEN}}
+Content-Type: application/json
+
+{
+  "responsible_user_id": "448ea29f-1fd4-4370-b7eb-8519fc1e7316"
+}

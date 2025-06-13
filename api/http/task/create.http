@@ -1,0 +1,15 @@
+@ACCESS_TOKEN=
+
+POST http://localhost:8080/task
+Authorization: Bearer {{ACCESS_TOKEN}}
+Content-Type: application/json
+
+{
+  "title": "Tarea 1",
+  "description": "Tarea de muestra",
+  "status": "pending",
+  "priority": "low",
+  "due_date": "2025-10-01",
+  "created_by_id": "88ed1ec2-e9ac-42ff-a55d-903451d8b545",
+  "task_list_id": "b4ddf98a-722d-4c9c-a1cd-04c2bc800503"
+}

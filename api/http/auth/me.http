@@ -1,0 +1,4 @@
+@ACCESS_TOKEN=
+
+GET http://localhost:8080/auth/me
+Authorization: Bearer {{ACCESS_TOKEN}}

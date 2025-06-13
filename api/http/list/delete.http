@@ -1,0 +1,5 @@
+@ACCESS_TOKEN=
+@ID=
+
+DELETE http://localhost:8080/list/{{ID}}
+Authorization: Bearer {{ACCESS_TOKEN}}

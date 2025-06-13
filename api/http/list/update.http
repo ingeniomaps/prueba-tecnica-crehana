@@ -1,0 +1,10 @@
+@ACCESS_TOKEN=
+@ID=
+
+PATCH http://localhost:8080/list/{{ID}}
+Authorization: Bearer {{ACCESS_TOKEN}}
+Content-Type: application/json
+
+{
+  "name": "Nuevo nombre"
+}

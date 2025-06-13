@@ -1,0 +1,9 @@
+@ACCESS_TOKEN=
+
+POST http://localhost:8080/list
+Authorization: Bearer {{ACCESS_TOKEN}}
+Content-Type: application/json
+
+{
+  "name": "TO DO"
+}

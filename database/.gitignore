@@ -1,0 +1,97 @@
+# Local
+postgres_data
+
+# Python
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+*.so
+
+# Virtual environments
+.venv/
+env/
+venv/
+ENV/
+env.bak/
+*.env
+*.env.*
+
+# Editor/IDE settings
+.vscode/
+.idea/
+*.swp
+
+# Byte-compiled files
+*.pyc
+
+# Logs and debug
+*.log
+*.tmp
+*.bak
+*.orig
+*.old
+
+# Jupyter
+.ipynb_checkpoints/
+
+# Unit test / coverage
+.coverage
+.cache/
+.pytest_cache/
+htmlcov/
+nosetests.xml
+coverage.xml
+*.cover
+.tox/
+test-results.xml
+
+# Mypy, Pylint, Ruff, Flake8
+.mypy_cache/
+.dmypy.json
+.pylint.d/
+ruff_cache/
+
+# Linting & formatting
+*.rej
+
+# Build artifacts
+build/
+dist/
+*.egg-info/
+.eggs/
+
+# Static type checker cache
+.pyre/
+
+# PyInstaller
+*.manifest
+*.spec
+
+# Docker
+**/__pycache__/
+*.db
+*.sqlite3
+
+# Local config
+*.local
+*.pem
+
+# FastAPI/OpenAPI
+openapi.json
+docs.json
+
+# VSCode launch configs
+.vscode/launch.json
+
+# Poetry
+poetry.lock
+
+# pip-tools
+*.txt~ # e.g. requirements.txt~
+
+# macOS / Linux / Windows
+.DS_Store
+Thumbs.db
+ehthumbs.db
+Desktop.ini

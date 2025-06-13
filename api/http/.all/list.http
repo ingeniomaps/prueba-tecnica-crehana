@@ -1,0 +1,31 @@
+@ACCESS_TOKEN=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJleGFtcGxlQHRlc3QuY28iLCJleHAiOjE3NDk3Nzg4ODh9.ku2q9LBmN2xhPcDOdmqHbVPdtx2NzTQsYmiCPb9E63k
+@ID=388ac9de-90de-4136-af8e-70b73ed49e84
+
+POST http://localhost:8080/list
+Authorization: Bearer {{ACCESS_TOKEN}}
+Content-Type: application/json
+
+{
+  "name": "TO DO"
+}
+
+
+GET http://localhost:8080/list
+Authorization: Bearer {{ACCESS_TOKEN}}
+
+
+GET http://localhost:8080/list/{{ID}}
+Authorization: Bearer {{ACCESS_TOKEN}}
+
+
+PATCH http://localhost:8080/list/{{ID}}
+Authorization: Bearer {{ACCESS_TOKEN}}
+Content-Type: application/json
+
+{
+  "name": "Nuevo nombre"
+}
+
+
+DELETE http://localhost:8080/list/{{ID}}
+Authorization: Bearer {{ACCESS_TOKEN}}

@@ -1,0 +1,11 @@
+@ACCESS_TOKEN=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJleGFtcGxlQHRlc3QuY28iLCJleHAiOjE3NDk3ODA4MjR9.pXgvl7gqSysahy9l61b6VLy_LlvIZl4BfWzWUDZrU20
+
+POST http://localhost:8080/user/board/invite
+Authorization: Bearer {{ACCESS_TOKEN}}
+Content-Type: application/json
+
+{
+  "email": "example@test.co",
+  "subject": "Emulación",
+  "body": "<div>Correo de invitación</div>"
+}
