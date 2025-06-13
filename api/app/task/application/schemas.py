@@ -24,10 +24,7 @@ class TaskBase(BaseModel):
     task_list_id: UUID
     extra_metadata: Optional[dict[str, Any]] = Field(default=None, alias="metadata")
 
-    class Config:
-        """Configuración."""
-
-        allow_population_by_field_name = True
+    model_config = {"populate_by_name": True}
 
 
 class TaskCreate(BaseModel):
@@ -42,10 +39,7 @@ class TaskCreate(BaseModel):
     task_list_id: UUID
     extra_metadata: Optional[dict[str, Any]] = Field(default=None, alias="metadata")
 
-    class Config:
-        """Configuración."""
-
-        allow_population_by_field_name = True
+    model_config = {"populate_by_name": True}
 
 
 class TaskRead(BaseModel):

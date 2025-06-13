@@ -12,7 +12,6 @@ from app.auth.infrastructure.security.password_hasher import hash_password, veri
 from app.infrastructure.db.session import get_session
 from app.user.domain.user_model import User
 
-
 router = APIRouter()
 
 

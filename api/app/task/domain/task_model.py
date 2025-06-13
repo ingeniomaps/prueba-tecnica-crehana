@@ -10,7 +10,7 @@ from sqlmodel import Field, Relationship, SQLModel
 from app.list.domain.list_model import List
 from app.user.domain.user_model import User
 
-if TYPE_CHECKING:
+if TYPE_CHECKING:  # pragma: no cover
     from .task_activity_log_model import TaskActivityLog
     from .task_collaborator_model import TaskCollaborator
 

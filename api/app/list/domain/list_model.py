@@ -5,7 +5,7 @@ from uuid import UUID, uuid4
 
 from sqlmodel import Field, Relationship, SQLModel
 
-if TYPE_CHECKING:
+if TYPE_CHECKING:  # pragma: no cover
     from app.task.domain.task_model import Task
 
 
