@@ -10,7 +10,7 @@ source "$env_file"
 set +a
 
 if [ $ENV == 'development' ]; then
-  sudo rm -r $SCRIPT_DIR/data
+  rm -rf $SCRIPT_DIR/data
   mkdir -p $SCRIPT_DIR/data/certbot/conf/live/server
   cp $SCRIPT_DIR/cert/* $SCRIPT_DIR/data/certbot/conf/live/server
 fi

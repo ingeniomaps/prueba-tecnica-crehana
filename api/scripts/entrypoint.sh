@@ -14,7 +14,7 @@ if [[ "$ENV" == "development" ]]; then
   # === Pruebas ===
   echo ""
   echo -e "\033[1;36mPruebas de código...\033[0m"
-  pytest
+  pytest --cov=app --cov-report=term-missing
 fi
 
 # # === Inicio del servidor ===
